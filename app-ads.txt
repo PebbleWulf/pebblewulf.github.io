@@ -1,0 +1,1 @@
+google.com, pub-[YOUR ADMOB PUBLISHER ID DIGITS], DIRECT, f08c47fec0942fa0
