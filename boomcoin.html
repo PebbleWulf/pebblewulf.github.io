@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BoomCoin: Coin Dozer – Pebblewulff</title>
+  <meta name="description" content="BoomCoin: Coin Dozer — a neon arcade coin pusher for Android. Screenshots and details.">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --fg: #1d1c1a;
+      --muted: #6b675f;
+      --accent: #85602b;
+      --gold: #b5854b;
+      --on-gold: #1d1c1a;
+      --line: #e3dfd6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161614;
+        --fg: #ece9e2;
+        --muted: #a29d93;
+        --accent: #d9aa66;
+        --gold: #c99a5c;
+        --on-gold: #161614;
+        --line: #2e2d29;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+    a { color: var(--accent); }
+    .back { display: inline-block; margin-bottom: 24px; line-height: 0; }
+    .back img { width: 200px; height: auto; }
+    .intro { display: flex; gap: 24px; align-items: flex-start; }
+    .intro-icon { flex: none; width: 120px; height: auto; }
+    @media (max-width: 540px) {
+      .intro { flex-direction: column; gap: 16px; }
+    }
+    h1 { font-size: 1.9rem; margin: 0 0 6px; line-height: 1.2; }
+    .intro p { margin: 0 0 16px; }
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--on-gold);
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 48px 0 16px; }
+    .shots {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    @media (max-width: 540px) {
+      .shots { grid-template-columns: repeat(2, 1fr); }
+    }
+    .shots a { display: block; line-height: 0; }
+    .shots img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+    }
+    footer {
+      margin: 64px 0 0;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer a { margin-right: 16px; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html"><img src="images/wordmark.webp" width="480" height="160" alt="Pebblewulff Games home"></a>
+
+  <div class="intro">
+    <img class="intro-icon" src="images/boomcoin-icon.webp" width="240" height="240" alt="BoomCoin app icon">
+    <div>
+      <h1>BoomCoin: Coin Dozer</h1>
+      <p>BoomCoin is a neon arcade coin pusher for Android: drop coins onto a moving shelf, push them over the edge to win, and set off bombs to blast the pile loose. It's quick, colourful and free to play, with optional ads that give you bonus coins and bombs.</p>
+      <!-- Replace the href with your Play Store link once the game is live. -->
+      <a class="btn" href="#">Coming soon to Google Play</a>
+    </div>
+  </div>
+
+  <h2>Screenshots</h2>
+  <div class="shots">
+    <a href="images/boomcoin/screenshot-1.webp"><img src="images/boomcoin/screenshot-1.webp" width="720" height="1280" alt="Push coins, win big: a pile of gold coins on the pusher shelf"></a>
+    <a href="images/boomcoin/screenshot-2.webp"><img src="images/boomcoin/screenshot-2.webp" width="720" height="1280" alt="Blast the pile with bombs: a bomb landing among the coins"></a>
+    <a href="images/boomcoin/screenshot-3.webp"><img src="images/boomcoin/screenshot-3.webp" width="720" height="1280" alt="Chain huge coin cascades: a KaPow! explosion over the coins"></a>
+    <a href="images/boomcoin/screenshot-4.webp"><img src="images/boomcoin/screenshot-4.webp" width="720" height="1280" alt="Collect 8 royal crowns: the crown collection screen"></a>
+    <a href="images/boomcoin/screenshot-5.webp"><img src="images/boomcoin/screenshot-5.webp" width="720" height="1280" alt="Pop balloons for prizes: hot-air balloons floating past clouds"></a>
+    <a href="images/boomcoin/screenshot-6.webp"><img src="images/boomcoin/screenshot-6.webp" width="720" height="1280" alt="8 levels to beat: the level complete screen"></a>
+  </div>
+
+  <footer>
+    <a href="index.html">All games</a>
+    <a href="privacy.html">Privacy policy</a>
+    <span>&copy; 2026 Pebblewulff</span>
+  </footer>
+</div>
+</body>
+</html>

@@ -64,6 +64,8 @@
     }
     .game + .game { margin-top: 16px; }
     .game-icon { flex: none; width: 120px; height: auto; }
+    .game-icon-link { flex: none; line-height: 0; border-radius: 22%; transition: transform 0.15s; }
+    .game-icon-link:hover, .game-icon-link:focus-visible { transform: scale(1.05); }
     .game-text { min-width: 0; }
     @media (max-width: 540px) {
       .game { flex-direction: column; gap: 16px; }
@@ -99,7 +101,7 @@
 
     <h2>Games</h2>
     <div class="game">
-      <img class="game-icon" src="images/boomcoin-icon.webp" width="240" height="240" alt="BoomCoin app icon">
+      <a class="game-icon-link" href="boomcoin.html"><img class="game-icon" src="images/boomcoin-icon.webp" width="240" height="240" alt="BoomCoin screenshots"></a>
       <div class="game-text">
         <h3>BoomCoin: Coin Dozer</h3>
         <p>BoomCoin is a neon arcade coin pusher for Android: drop coins onto a moving shelf, push them over the edge to win, and set off bombs to blast the pile loose. It's quick, colourful and free to play, with optional ads that give you bonus coins and bombs.</p>
