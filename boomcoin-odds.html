@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boomcoin prize odds – Pebblewulff</title>
+  <meta name="description" content="The chance of every prize in Boomcoin's mini games.">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <!-- Made by tools/make_odds_page.py in the Boomcoin (Dozer) project. Re-run it rather than editing by hand. -->
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --fg: #1d1c1a;
+      --muted: #6b675f;
+      --accent: #85602b;
+      --line: #e3dfd6;
+      --stripe: #efece5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161614;
+        --fg: #ece9e2;
+        --muted: #a29d93;
+        --accent: #d9aa66;
+        --line: #2e2d29;
+        --stripe: #1e1e1b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+    a { color: var(--accent); }
+    .back { display: inline-block; margin-bottom: 24px; line-height: 0; }
+    .back img { width: 200px; height: auto; }
+    h1 { font-size: 1.9rem; margin: 0 0 12px; line-height: 1.2; }
+    h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 48px 0 12px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0 8px; font-variant-numeric: tabular-nums; }
+    th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+    th { color: var(--muted); font-weight: 600; font-size: 0.9rem; }
+    td + td, th + th { text-align: right; white-space: nowrap; }
+    tbody tr:nth-child(odd) { background: var(--stripe); }
+    .note { color: var(--muted); font-size: 0.95rem; margin: 8px 0 0; }
+    footer {
+      margin: 64px 0 0;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer a { margin-right: 16px; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html"><img src="images/wordmark.webp" width="480" height="160" alt="Pebblewulff Games home"></a>
+
+  <h1>Boomcoin prize odds</h1>
+  <p>Boomcoin has four mini games, played with tickets you win on the coin pusher. Tickets can't be bought, and every prize is in-game coins or gems: nothing pays out real money. Here is the chance of every prize.</p>
+
+  <h2>Which game you get</h2>
+  <p>A mini game costs three tickets. The game is picked at random, but never the same one twice in a row, so each of the other three has a 1 in 3 chance.</p>
+
+  <h2>Pop &amp; Match</h2>
+  <p>Pop balloons to reveal prizes. Find three of the same prize and you win it. If six pops find no three of a kind, you get the consolation prize.</p>
+  <table>
+    <thead><tr><th>Prize</th><th>Chance</th></tr></thead>
+    <tbody>
+        <tr><td>10 coins</td><td>35%</td></tr>
+        <tr><td>25 coins</td><td>25%</td></tr>
+        <tr><td>50 coins</td><td>12%</td></tr>
+        <tr><td>100 coins</td><td>5% (1 in 20)</td></tr>
+        <tr><td>250 coins</td><td>1% (1 in 100)</td></tr>
+        <tr><td>2 gems</td><td>10% (1 in 10)</td></tr>
+        <tr><td>No match (pays 5 coins)</td><td>12%</td></tr>
+    </tbody>
+  </table>
+  <p class="note">On average a game pays about 24 coins (not counting gems).</p>
+  <h2>Lucky Wheel</h2>
+  <p>Spin the wheel and win the prize it stops on. All eight wedges are the same size, so each wedge has the same chance; some prizes are on more than one wedge.</p>
+  <table>
+    <thead><tr><th>Prize</th><th>Chance</th></tr></thead>
+    <tbody>
+        <tr><td>5 coins</td><td>12.5%</td></tr>
+        <tr><td>10 coins</td><td>25%</td></tr>
+        <tr><td>15 coins</td><td>12.5%</td></tr>
+        <tr><td>20 coins</td><td>12.5%</td></tr>
+        <tr><td>25 coins</td><td>12.5%</td></tr>
+        <tr><td>100 coins</td><td>12.5%</td></tr>
+        <tr><td>2 gems</td><td>12.5%</td></tr>
+    </tbody>
+  </table>
+  <p class="note">On average a game pays about 23 coins (not counting gems).</p>
+  <h2>High-Striker</h2>
+  <p>Tap as the needle sweeps across the bar; the nearer the middle, the bigger the prize. The chances below are for a tap at a random moment. Good timing does better.</p>
+  <table>
+    <thead><tr><th>Prize</th><th>Chance</th></tr></thead>
+    <tbody>
+        <tr><td>5 coins</td><td>40%</td></tr>
+        <tr><td>15 coins</td><td>30%</td></tr>
+        <tr><td>30 coins</td><td>18%</td></tr>
+        <tr><td>60 coins</td><td>8% (1 in 12)</td></tr>
+        <tr><td>150 coins</td><td>4% (1 in 25)</td></tr>
+    </tbody>
+  </table>
+  <p class="note">On average a game pays about 23 coins.</p>
+  <h2>Bagatelle</h2>
+  <p>Shoot a marble round the board and down through the pins into one of five cups. Nothing steers the marble, so the chances can't be set exactly: we measured them by firing 20,000 marbles through the game's own board.</p>
+  <table>
+    <thead><tr><th>Prize</th><th>Chance</th></tr></thead>
+    <tbody>
+        <tr><td>10 coins</td><td>about 27%</td></tr>
+        <tr><td>15 coins</td><td>about 16%</td></tr>
+        <tr><td>20 coins</td><td>about 25%</td></tr>
+        <tr><td>25 coins</td><td>about 25%</td></tr>
+        <tr><td>100 coins</td><td>about 7% (1 in 14)</td></tr>
+    </tbody>
+  </table>
+  <p class="note">On average a game pays about 24 coins.</p>
+
+  <footer>
+    <a href="boomcoin.html">Boomcoin</a>
+    <a href="index.html">All games</a>
+    <a href="privacy.html">Privacy policy</a>
+    <span>Updated 13 November 2026</span>
+  </footer>
+</div>
+</body>
+</html>
