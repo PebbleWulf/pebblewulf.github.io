@@ -71,6 +71,39 @@
       border-radius: 12px;
       border: 1px solid var(--line);
     }
+    /* The gameplay video: a still from it with a play button, linking to
+       YouTube (no embedded player, so nothing loads from Google until a
+       visitor chooses to watch). */
+    .video { position: relative; display: block; width: min(320px, 100%); line-height: 0; }
+    .video img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+    }
+    .play {
+      position: absolute;
+      left: 50%;
+      top: 64%;
+      width: 84px;
+      height: 84px;
+      margin: -42px 0 0 -42px;
+      border-radius: 50%;
+      background: rgba(20, 10, 40, 0.68);
+      border: 3px solid #fff;
+      transition: background 0.15s, transform 0.15s;
+    }
+    .play::after {
+      content: "";
+      position: absolute;
+      left: 31px;
+      top: 22px;
+      border-style: solid;
+      border-width: 17px 0 17px 28px;
+      border-color: transparent transparent transparent #fff;
+    }
+    .video:hover .play, .video:focus-visible .play { background: var(--gold); transform: scale(1.08); }
+    .video-note { margin: 10px 0 0; color: var(--muted); font-size: 0.95rem; }
     footer {
       margin: 64px 0 0;
       padding-top: 20px;
@@ -94,6 +127,13 @@
       <a class="btn" href="#">Coming soon to Google Play</a>
     </div>
   </div>
+
+  <h2>Watch it in action</h2>
+  <a class="video" href="https://www.youtube.com/shorts/Yf0VCsZyRis" aria-label="Watch the Boomcoin gameplay video on YouTube">
+    <img src="images/boomcoin/video-poster.webp" width="720" height="1280" alt="A bomb blasts the coin pile: ×2 coins and a Wowser! burst">
+    <span class="play" aria-hidden="true"></span>
+  </a>
+  <p class="video-note"><a href="https://www.youtube.com/shorts/Yf0VCsZyRis">Watch on YouTube</a> (28 seconds, sound on)</p>
 
   <h2>Screenshots</h2>
   <div class="shots">
